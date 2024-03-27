@@ -4,18 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "ts-node ./scripts/compile.ts",
-    "test": "npm run compile && jest",
-    "deploy": "npm run compile && TESTNET=true ts-node ./scripts/deploy.ts",
-    "deploy:mainnet": "npm run compile && ts-node ./scripts/deploy.ts",
-    "onchaintest": "TESTNET=true ts-node ./scripts/onchaintest.ts",
-    "onchaintest:mainnet": "ts-node ./scripts/onchaintest.ts"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@orbs-network/ton-access": "^2.3.3",
     "@swc/core": "^1.4.8",
+    "@ton-community/blueprint": "^0.12.0",
     "@ton-community/func-js": "^0.6.3",
     "@ton-community/sandbox": "^0.11.0",
     "@ton-community/test-utils": "^0.3.0",
